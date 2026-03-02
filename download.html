@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIY Wood Plans Dashboard</title>
+<link href="img/favicon.ico" rel="icon">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="css/dashboard.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="img/woodcraft-logo.png">
+        </a>
+
+    <ul>
+        <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+        <li><a href="mypdfplan.html"><i class="fa-solid fa-file-pdf"></i> My PDF Plans</a></li>
+        <li><a href="video.html"><i class="fa-solid fa-video"></i> Video Tutorials</a></li>
+        <li><a href="project-lib.html"><i class="fa-solid fa-list-check"></i> Project Library</a></li>
+        <li><a href="download.html"><i class="fa-solid fa-download"></i> Downloads</a></li>
+        <li><a href="myaccount.html"><i class="fa-solid fa-user"></i> My Account</a></li>
+        <li><a href="logout.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+    </ul>
+
+</div>
+
+<!-- Main Content -->
+<div class="main-content">
+
+    <!-- ================= Downloads Page ================= -->
+
+<div class="topbar">
+    <i class="fa-solid fa-bars toggle-btn" onclick="toggleSidebar()"></i>
+    <h2>My Downloads</h2>
+</div>
+
+<!-- Summary Section -->
+<div class="download-summary">
+    <div class="summary-box">
+        <h3>Total Downloads</h3>
+        <p>24 Files</p>
+    </div>
+
+    <div class="summary-box">
+        <h3>Available Storage</h3>
+        <p>Unlimited</p>
+    </div>
+
+    <div class="summary-box">
+        <h3>Last Download</h3>
+        <p>01 March 2026</p>
+    </div>
+</div>
+
+<!-- Downloads Table -->
+<div class="download-table-wrapper">
+
+    <table class="download-table">
+        <thead>
+            <tr>
+                <th>File Name</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th>Size</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Modern Coffee Table Plan.pdf</td>
+                <td>Furniture</td>
+                <td>01 Mar 2026</td>
+                <td>2.5 MB</td>
+                <td>
+                    <a href="#" class="btn">Download</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Wooden Dining Chair Plan.pdf</td>
+                <td>Beginner</td>
+                <td>27 Feb 2026</td>
+                <td>1.8 MB</td>
+                <td>
+                    <a href="#" class="btn">Download</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Tool Storage Cabinet Plan.pdf</td>
+                <td>Storage</td>
+                <td>25 Feb 2026</td>
+                <td>3.1 MB</td>
+                <td>
+                    <a href="#" class="btn">Download</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Advanced Joinery Guide.pdf</td>
+                <td>Advanced</td>
+                <td>20 Feb 2026</td>
+                <td>4.2 MB</td>
+                <td>
+                    <a href="#" class="btn">Download</a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>
+
+</div>
+
+<script>
+function toggleSidebar(){
+    document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

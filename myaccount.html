@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIY Wood Plans Dashboard</title>
+<link href="img/favicon.ico" rel="icon">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="css/dashboard.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="img/woodcraft-logo.png">
+        </a>
+
+    <ul>
+        <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+        <li><a href="mypdfplan.html"><i class="fa-solid fa-file-pdf"></i> My PDF Plans</a></li>
+        <li><a href="video.html"><i class="fa-solid fa-video"></i> Video Tutorials</a></li>
+        <li><a href="project-lib.html"><i class="fa-solid fa-list-check"></i> Project Library</a></li>
+        <li><a href="download.html"><i class="fa-solid fa-download"></i> Downloads</a></li>
+        <li><a href="myaccount.html"><i class="fa-solid fa-user"></i> My Account</a></li>
+        <li><a href="logout.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+    </ul>
+
+</div>
+
+<!-- Main Content -->
+<div class="main-content">
+
+   <!-- ================= Profile Page ================= -->
+
+<div class="topbar">
+    <i class="fa-solid fa-bars toggle-btn" onclick="toggleSidebar()"></i>
+    <h2>My Profile</h2>
+</div>
+
+<div class="profile-container">
+
+    
+
+
+    <!-- Right Profile Form -->
+    <div class="profile-form">
+        <div class="profile-image">
+            <img src="img/team-4.jpg" alt="Profile">
+        </div>
+        <button class="btn">Change Photo</button>
+
+        <h3>John Woodworker</h3>
+        <p>Premium Member</p>
+
+        <div class="profile-stats">
+            <div>
+                <strong>12</strong>
+                <span>Plans</span>
+            </div>
+            <div>
+                <strong>8</strong>
+                <span>Videos</span>
+            </div>
+            <div>
+                <strong>24</strong>
+                <span>Downloads</span>
+            </div>
+        </div>
+
+        
+
+        <h3>Account Information</h3>
+
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" value="John Woodworker">
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" value="john@email.com">
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="text" value="+91 9876543210">
+        </div>
+
+        <div class="form-group">
+            <label>Location</label>
+            <input type="text" value="Chennai, India">
+        </div>
+
+        <button class="btn">Save Changes</button>
+
+
+        <hr style="margin:30px 0;">
+
+        <h3>Change Password</h3>
+
+        <div class="form-group">
+            <label>Current Password</label>
+            <input type="password">
+        </div>
+
+        <div class="form-group">
+            <label>New Password</label>
+            <input type="password">
+        </div>
+
+        <div class="form-group">
+            <label>Confirm Password</label>
+            <input type="password">
+        </div>
+
+        <button class="btn">Update Password</button>
+
+    </div>
+
+</div>
+
+</div>
+
+<script>
+function toggleSidebar(){
+    document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
